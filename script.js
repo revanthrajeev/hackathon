@@ -132,11 +132,11 @@ function showExplanation(explanation) {
         existingExplanation.remove();
     }
     
-    // Create and append explanation element inside scrollable quiz-content
+    // Create and append explanation element
     const explanationElement = document.createElement('div');
     explanationElement.className = 'explanation-text';
     explanationElement.innerHTML = `<p><strong>Explanation:</strong> ${explanation}</p>`;
-    document.querySelector('.quiz-content').appendChild(explanationElement);
+    optionsList.parentNode.insertBefore(explanationElement, optionsList.nextSibling);
 }
 
 function questionCounter(index) {
