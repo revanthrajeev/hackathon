@@ -495,48 +495,6 @@ body{
 @media (max-width: 320px) {
     /* keep responsive rules here */
 }
-/* === Stop sideways scroll and center quiz while keeping slide-in === */
-html, body {
-    overflow-x: hidden;       /* prevent horizontal scroll to Home */
-    overflow-y: auto;         /* allow vertical scrolling */
-}
-
-/* Each section should occupy exactly the viewport width */
-.container {
-    display: flex;
-    width: auto;              /* was 200% */
-    min-height: 100vh;
-}
-
-/* Force sections to 100vw so they don't create extra width */
-.home, .quiz-section {
-    width: 100vw;
-    flex: 0 0 100vw;
-}
-
-/* Remove old left offset behavior */
-.home { left: 0 !important; }
-.quiz-section {
-    left: 0 !important;
-    display: flex;
-    justify-content: center;     /* center horizontally */
-    align-items: flex-start;      /* start at top for vertical growth */
-    padding-top: 100px;           /* clear the fixed header */
-    transform: translateX(100vw); /* sit off-canvas to the right initially */
-    transition: transform .8s ease-in-out;
-    background: #f8f8f8;
-}
-.quiz-section.active {
-    transform: translateX(0);     /* slide into view */
-}
-
-/* Keep result box in flow so page height/scroll works */
-.quiz-section .result-box {
-    position: relative;
-    top: 0; left: 0;
-    transform: none;
-    margin-top: 50px;
-}
 /* Prevent horizontal scroll while keeping two-page layout */
 .container {
     overflow-x: hidden;
@@ -559,5 +517,3 @@ html, body {
 .quiz-section .quiz-box {
     margin: 0 auto;
 }
-
-
