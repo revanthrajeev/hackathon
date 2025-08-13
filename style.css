@@ -537,4 +537,27 @@ html, body {
     transform: none;
     margin-top: 50px;
 }
+/* Prevent horizontal scroll while keeping two-page layout */
+.container {
+    overflow-x: hidden;
+}
+
+/* Allow vertical scroll everywhere */
+html, body {
+    overflow-y: auto;
+}
+
+/* Keep quiz centered while allowing scroll */
+.quiz-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* top aligned for long content */
+    padding-top: 100px; /* space for header */
+}
+
+/* Make sure quiz box doesn't stretch weirdly */
+.quiz-section .quiz-box {
+    margin: 0 auto;
+}
+
 
