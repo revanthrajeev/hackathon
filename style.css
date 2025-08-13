@@ -236,22 +236,6 @@ body{
     transition: 1s ease;
     transition-delay: 1s;
 }
-.quiz-content {
-    max-height: 300px; /* Adjust height as needed */
-    overflow-y: auto;
-    padding-right: 10px;
-    margin-bottom: 15px;
-}
-
-/* Optional: custom scrollbar for better UX */
-.quiz-content::-webkit-scrollbar {
-    width: 6px;
-}
-.quiz-content::-webkit-scrollbar-thumb {
-    background: #c40094;
-    border-radius: 3px;
-}
-
 
 .quiz-box h1{
     font-size: 32px;
