@@ -201,7 +201,7 @@ body{
     border-color: #0e6e07;
 }
 
-.quiz-section{
+.quiz-section {
     position: relative;
     left: -50%;
     width: 100%;
@@ -210,10 +210,11 @@ body{
     transition-delay: .25s;
     z-index: 100;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* align to top so content can grow */
-    padding-top: 100px; /* to avoid overlap with fixed header */
+    justify-content: center; /* keeps it centered horizontally */
+    align-items: flex-start; /* start at top for scrolling */
+    padding-top: 100px; /* header offset */
 }
+
 .quiz-section.active{
     left:0;
 }
