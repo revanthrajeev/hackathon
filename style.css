@@ -216,7 +216,7 @@ body{
 }
 
 .quiz-section.active{
-    left:-50;
+    left:0;
 }
 
 .quiz-section .quiz-box{
